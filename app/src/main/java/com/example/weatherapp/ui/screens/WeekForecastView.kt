@@ -24,7 +24,7 @@ import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
 @Composable
-fun WeekForecastView(innerPadding: PaddingValues) {
+fun WeekForecastView() {
     val dateFormatter = DateTimeFormatter.ofPattern("EEE, MMM d")
     val weekForecast = listOf(
         ForecastDay(
@@ -88,7 +88,6 @@ fun WeekForecastView(innerPadding: PaddingValues) {
     LazyColumn(
         modifier = Modifier
             .fillMaxSize()
-            .padding(paddingValues = innerPadding)
             .padding(horizontal = 15.dp)
     ) {
         itemsIndexed(weekForecast) { index, forecast ->

@@ -20,7 +20,7 @@ import com.example.weatherapp.models.Temperature
 import com.example.weatherapp.models.Wind
 
 @Composable
-fun CurrentConditionsView(innerPadding: PaddingValues) {
+fun CurrentConditionsView() {
     val currentConditions = CurrentConditions(
         condition = "Rain",
         conditionResourceId = R.drawable.rainy_3,
@@ -32,7 +32,6 @@ fun CurrentConditionsView(innerPadding: PaddingValues) {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .padding(paddingValues = innerPadding)
             .padding(horizontal = 15.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
