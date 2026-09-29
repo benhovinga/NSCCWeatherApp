@@ -53,8 +53,8 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.tooling)
 
     // Navigation
-    implementation("androidx.navigation:navigation-compose:2.10.2")
+    implementation(libs.androidx.navigation.compose)
     // Icons (for the nav menu buttons)
-    implementation("androidx.compose.material:material-icons-core:1.7.8")
-    implementation("androidx.compose.material:material-icons-extended:1.7.8")
+    implementation(libs.androidx.compose.material.icons.core)
+    implementation(libs.androidx.compose.material.icons.extended)
 }
